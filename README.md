@@ -1,2 +1,0 @@
-# TuneHub
-spring boot application
