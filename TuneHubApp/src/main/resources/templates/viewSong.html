@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>songs</title>
+<style type="text/css">
+body {
+	background-image:
+		url("https://www.1zoom.me/big2/64/189244-avallonist.jpg");
+	background-size: cover;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	min-height : 200px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid;
+	border-radius: 10px;
+	cursor: pointer;
+	min-height: 200px;
+	background-color: navy;
+}
+
+.card:hover {
+	color: white;
+}
+
+.inline {
+	display: flex;
+	padding: 10px;
+	margin: 10px;
+	justify-content: space-between;
+}
+
+.title {
+	text-align: center;
+}
+
+.song {
+	margin: 10px;
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+	<div th:each="song:${songs}" class="card">
+		<div class="inline">
+			<div th:text=${song.artist} style="color: orangered;"></div>
+			<div th:text=${song.genre} style="color:white;"></div>
+		</div>
+		<h1 th:text=${song.name} class="title"></h1>
+		<div class="song">
+			<audio controls="controls">
+				<source th:src=${song.link} type="audio/mp3">
+			</audio>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TUNE HUB - Register</title>
+<style type="text/css">
+body {
+	background-image:
+		url("https://www.1zoom.me/big2/64/189244-avallonist.jpg");
+		background-size: cover;
+}
+
+.rBody {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5%;
+}
+
+table {
+	border: 1px solid;
+	margin: 10px;
+	border-radius: 10px;
+	padding: 20px;
+	color: white;
+}
+
+table tr td {
+	padding: 10px;
+}
+
+input, textarea {
+	height: 20px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+button {
+	width: 60%;
+	font-size: larger;
+	font-weight: bolder;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: orangeRed;
+	cursor: pointer;
+	margin-left: 20%
+}
+
+button:hover {
+	background-color: red;
+	color: white;
+	justify-content: center;
+}
+</style>
+</head>
+<body>
+	<div class="rBody">
+		<form action="register" method="post">
+			<table>
+				<tr>
+					<th colspan="2"><h1>Enter the details to Register</h1></th>
+				</tr>
+				<tr>
+					<td>User Name</td>
+					<td><input type="text" placeholder="Enter your UserName "
+						name="username" /></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="text" placeholder="Enter your Email"
+						name="email" /></td>
+				</tr>
+				<tr>
+					<td>DOB</td>
+					<td><input type="date" placeholder="Enter your Dob" name="dob" /></td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td><input type="radio" value="Male" name="gender" /><label>Male</label><input
+						type="radio" value="Female" name="gender" /><label>Female</label><input
+						type="radio" value="Other" name="gender" /><label>Other</label></td>
+				</tr>
+				<tr>
+					<td>Address</td>
+					<td><textarea name="address"></textarea></td>
+				</tr>
+				<tr>
+					<td>Roal</td>
+					<td><input type="radio" value="admin" name="roal" /><label>Admin</label><input
+						type="radio" value="customer" name="roal" /><label>Customer</label></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="text" placeholder="Enter your Password"
+						name="password" /></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button>Register</button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
