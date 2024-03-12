@@ -1,0 +1,12 @@
+/* styles.css */
+
+.dark-theme-select .select__control {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-theme-select .select__placeholder {
+  color: #ccc;
+}
+
+/* Add more styles as needed */
